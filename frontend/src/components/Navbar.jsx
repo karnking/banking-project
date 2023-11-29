@@ -41,7 +41,7 @@ const Navbar = () => {
         <Toolbar disableGutters>
           <Avatar
             variant="rounded"
-            sx={{width:'fit-content',height:'full',backgroundBlendMode:'multiply',display:{xs:'none',md:'flex'}}}
+            sx={{width:'fit-content',height:'60px',backgroundBlendMode:'multiply',display:{xs:'none',md:'flex'}}}
             href="#app-bar-with-responsive-menu"
             src={web_logo}
           />
@@ -88,7 +88,7 @@ const Navbar = () => {
             href="#app-bar-with-responsive-menu"
             src={web_logo}
           />
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, marginLeft: '2em' }}>
             {pages.map((page) => (
               <Button
                 key={page}
