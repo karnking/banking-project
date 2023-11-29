@@ -11,10 +11,9 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import web_logo from '../assets/web_logo.png'
-import logo from '../assets/logo.png'
 import { useState } from 'react';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Account', 'Services', 'Newsroom'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const Navbar = () => {
@@ -42,7 +41,7 @@ const Navbar = () => {
         <Toolbar disableGutters>
           <Avatar
             variant="rounded"
-            sx={{width:'fit-content',height:'50px',display:{xs:'none',md:'flex'}}}
+            sx={{width:'fit-content',height:'full',backgroundBlendMode:'multiply',display:{xs:'none',md:'flex'}}}
             href="#app-bar-with-responsive-menu"
             src={web_logo}
           />
